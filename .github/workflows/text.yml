@@ -1,13 +1,12 @@
-name: test
+name: new
 
 on:
-  push:
-    branches:
-    - master
-  
+    push:
+
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run a one-line script
-        run: echo Hello, world!
+    try:
+        runs-on: ubuntu-latest
+        steps:
+          - run: echo "Hello World"
+
