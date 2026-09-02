@@ -16,8 +16,8 @@ on:
 jobs:
     try:
         runs-on: ubuntu-latest
+        env:
+            new: ${{ toJSON(github) }}
         steps:
-          - run: echo "Hello World"
+            - run: echo " Hello World - ${{ env.new }}"
           
-          - run: pwd
-
